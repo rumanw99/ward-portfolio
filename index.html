@@ -3,9 +3,363 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Ward Ruman - Professional Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles/animations.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- EmailJS SDK -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-	
+	<nav class="navbar">
+		<div class="scroll-progress"></div>
+		<div class="nav-container">
+			<div class="nav-brand">
+				<img src="./assets/logo.png" alt="Ward Idea" class="logo">
+			</div>
+			<div class="nav-menu">
+				<ul class="nav-links">
+					<li style="--i:1"><a href="#home" class="active">Home</a></li>
+					<li style="--i:2"><a href="#about">About</a></li>
+					<li style="--i:3"><a href="#experience">Experience</a></li>
+					<li style="--i:4"><a href="#projects">Projects</a></li>
+					<li style="--i:5"><a href="#contact">Contact</a></li>
+				</ul>
+				<a href="#contact" class="get-started-btn">Hire Me</a>
+			</div>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</nav>
+
+	<section id="home" class="hero">
+		<div class="hero-container">
+			<div class="hero-content">
+				<div class="hero-text animate fade-in">
+					<h1>Professional <span class="highlight">Software Developer</span> & Business Leader</h1>
+					<p class="hero-description">Transforming ideas into powerful solutions through code and leadership</p>
+					<div class="hero-cta">
+						<a href="#contact" class="primary-btn animate fade-in delay-1">Let's Connect</a>
+						<a href="#experience" class="secondary-btn animate fade-in delay-2">View Experience</a>
+					</div>
+					<div class="hero-stats animate fade-in delay-3">
+						<div class="stat">
+							<h3>4+</h3>
+							<p>Years Experience</p>
+						</div>
+						<div class="stat">
+							<h3>50+</h3>
+							<p>Projects Completed</p>
+						</div>
+						<div class="stat">
+							<h3>20+</h3>
+							<p>Happy Clients</p>
+						</div>
+					</div>
+				</div>
+				<div class="hero-image animate fade-in delay-2">
+					<img src="./assets/wln.png" alt="Ward Ruman Profile Picture">
+					<div class="experience-card">
+						<div class="card-icon">
+							<i class="fas fa-code"></i>
+						</div>
+						<h4>Frontend Developer</h4>
+						<p>React.js Expert</p>
+					</div>
+					<div class="achievement-card">
+						<div class="card-icon">
+							<i class="fas fa-trophy"></i>
+						</div>
+						<h4>Business Leader</h4>
+						<p>Sales & Strategy</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="about">
+		<div class="section-container">
+			<div class="section-header">
+				<h2 class="scroll-animate">About Me</h2>
+				<p class="section-subtitle scroll-animate">My professional journey and expertise</p>
+			</div>
+			<div class="about-content">
+				<div class="about-text scroll-animate">
+					<p>Dynamic and results-driven professional with a strong background in software development, sales, and financial management. Proven ability to lead projects, drive business growth, and build long-lasting partnerships.</p>
+					<p>Comfortable working with technical English in programming and sales environments. Skilled in outbound sales, CRM systems, and modern technologies like React.js and HubSpot.</p>
+				</div>
+				<div class="skills-grid">
+					<div class="skill-category scroll-animate hover-scale">
+						<div class="skill-header">
+							<i class="fas fa-code"></i>
+							<h3>Technical Skills</h3>
+						</div>
+						<div class="skill-items">
+							<span class="skill-tag">JavaScript</span>
+							<span class="skill-tag">React.js</span>
+							<span class="skill-tag">HTML/CSS</span>
+							<span class="skill-tag">ReactQuery</span>
+							<span class="skill-tag">Recoil</span>
+							<span class="skill-tag">MUI</span>
+						</div>
+					</div>
+					<div class="skill-category scroll-animate hover-scale">
+						<div class="skill-header">
+							<i class="fas fa-chart-line"></i>
+							<h3>Business Skills</h3>
+						</div>
+						<div class="skill-items">
+							<span class="skill-tag">Sales Leadership</span>
+							<span class="skill-tag">Project Management</span>
+							<span class="skill-tag">Team Building</span>
+							<span class="skill-tag">Strategic Planning</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="experience" class="experience">
+		<div class="section-container">
+			<div class="section-header">
+				<h2 class="scroll-animate">Work Experience</h2>
+				<p class="section-subtitle scroll-animate">My professional background</p>
+			</div>
+			<div class="timeline">
+				<div class="timeline-item scroll-animate">
+					<div class="timeline-content">
+						<span class="date">2022</span>
+						<h3>Frontend Engineer</h3>
+						<h4>ECOMUNDO</h4>
+						<p class="company-details">Remote, France</p>
+						<ul class="achievement-list">
+							<li>Developed a reusable React.js component library</li>
+							<li>Migrated major solutions to micro frontend architecture</li>
+							<li>Led international team collaborations</li>
+						</ul>
+						<div class="tech-stack">
+							<span class="tech-tag">React.js</span>
+							<span class="tech-tag">ReactQuery</span>
+							<span class="tech-tag">MUI</span>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item scroll-animate">
+					<div class="timeline-content">
+						<span class="date">2021-2022</span>
+						<h3>Software Sales Specialist</h3>
+						<h4>Logic Software Development</h4>
+						<p class="company-details">Remote</p>
+						<ul class="achievement-list">
+							<li>Managed B2B software sales with consistent target achievement</li>
+							<li>Delivered technical consultations to clients</li>
+							<li>Improved customer retention rates</li>
+						</ul>
+						<div class="tech-stack">
+							<span class="tech-tag">HubSpot</span>
+							<span class="tech-tag">Sales</span>
+							<span class="tech-tag">CRM</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="projects" class="projects">
+		<div class="section-container">
+			<div class="section-header">
+				<h2 class="scroll-animate">Featured Projects</h2>
+				<p class="section-subtitle scroll-animate">Some of my best work</p>
+			</div>
+			<div class="projects-grid">
+				<div class="project-card scroll-animate hover-lift">
+					<div class="project-image">
+						<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop&crop=focalpoint&auto=format&q=80" alt="React Component Library - Modern UI Components">
+					</div>
+					<div class="project-content">
+						<h3>React Component Library</h3>
+						<p>A comprehensive library of reusable React components built for scalability and performance.</p>
+						<div class="project-tech">
+							<span class="tech-tag">React</span>
+							<span class="tech-tag">TypeScript</span>
+							<span class="tech-tag">Storybook</span>
+						</div>
+						<div class="project-links">
+							<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+							<a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+						</div>
+					</div>
+				</div>
+				<!-- Add more project cards as needed -->
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="contact">
+		<div class="section-container">
+			<div class="section-header">
+				<h2 class="scroll-animate">Get In Touch</h2>
+				<p class="section-subtitle scroll-animate">Let's discuss your next project</p>
+			</div>
+			<div class="contact-content">
+				<div class="contact-info scroll-animate">
+					<div class="contact-card">
+						<i class="fas fa-envelope"></i>
+						<h3>Email</h3>
+						<p>rumanw99@gmail.com</p>
+						<a href="mailto:rumanw99@gmail.com" class="contact-link">Send Email</a>
+					</div>
+					<div class="contact-card">
+						<i class="fas fa-phone"></i>
+						<h3>Phone</h3>
+						<p>(+963) 0958260561</p>
+						<a href="tel:+9630958260561" class="contact-link">Call Now</a>
+					</div>
+					<div class="contact-card">
+						<i class="fab fa-linkedin"></i>
+						<h3>LinkedIn</h3>
+						<p>Professional Profile</p>
+						<a href="https://www.linkedin.com/in/ward-ruman-718aa622b" target="_blank" class="contact-link">Connect</a>
+					</div>
+				</div>
+				<form class="contact-form scroll-animate" id="contact-form">
+					<div class="form-group">
+						<input type="text" id="name" name="from_name" placeholder="Your Name" required class="form-input hover-bright">
+					</div>
+					<div class="form-group">
+						<input type="email" id="email" name="from_email" placeholder="Your Email" required class="form-input hover-bright">
+					</div>
+					<div class="form-group">
+						<input type="text" id="subject" name="subject" placeholder="Subject" required class="form-input hover-bright">
+					</div>
+					<div class="form-group">
+						<textarea id="message" name="message" placeholder="Your Message" required class="form-input hover-bright"></textarea>
+					</div>
+					<button type="submit" class="submit-btn hover-lift pulse">
+						<span class="btn-text">Send Message</span>
+						<span class="loading-spinner" style="display: none;">
+							<i class="fas fa-spinner fa-spin"></i>
+						</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer-brand">
+				<img src="./assets/logo.png" alt="Ward Idea" class="footer-logo">
+				<p>Transforming ideas into reality through code and leadership</p>
+			</div>
+			<div class="footer-links">
+				<div class="footer-section">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h4>Connect</h4>
+					<div class="social-links">
+						<a href="https://www.linkedin.com/in/ward-ruman-718aa622b" target="_blank" class="social-link hover-lift">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="https://github.com" target="_blank" class="social-link hover-lift">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2024 Ward Ruman. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script>
+		(function() {
+			// Simple initialization
+			emailjs.init("nKwAvD9zKcn3tAeqw");
+			console.log('EmailJS initialized');
+		})();
+
+		// Test EmailJS connection
+		window.onload = function() {
+			document.getElementById('contact-form').addEventListener('submit', function(event) {
+				event.preventDefault();
+				
+				// Show loading
+				const submitBtn = this.querySelector('.submit-btn');
+				const btnText = submitBtn.querySelector('.btn-text');
+				const loadingSpinner = submitBtn.querySelector('.loading-spinner');
+				
+				btnText.style.display = 'none';
+				loadingSpinner.style.display = 'inline-block';
+				submitBtn.disabled = true;
+
+				// Prepare template parameters for both emails
+				const emailParams = {
+					name: this.querySelector('[name="from_name"]').value,
+					time: new Date().toLocaleString(),
+					message: this.querySelector('[name="message"]').value,
+					from_email: this.querySelector('[name="from_email"]').value,
+					email: this.querySelector('[name="from_email"]').value
+				};
+
+				console.log('Sending email with parameters:', emailParams);
+
+				// Send admin email
+				emailjs.send('service_xsp38f6', 'template_8t1jua3', {
+					...emailParams,
+					from_name: 'Ward Ruman',
+					from_email: 'rumanw99@gmail.com'
+				})
+					.then(function(response) {
+						console.log('Admin email sent successfully', response);
+						// After admin email is sent, send auto-reply
+						return emailjs.send('service_xsp38f6', 'template_59jrq5f', {
+							...emailParams,
+							to_email: emailParams.from_email,
+							from_name: 'Ward Ruman',
+							from_email: 'rumanw99@gmail.com'
+						});
+					})
+					.then(function(response) {
+						console.log('Auto-reply sent successfully', response);
+						showNotification('Message sent successfully! You will receive a confirmation email shortly.', 'success');
+						document.getElementById('contact-form').reset();
+					})
+					.catch(function(error) {
+						console.error('Email sending failed:', error);
+						showNotification('Error sending message: ' + error.text, 'error');
+					})
+					.finally(function() {
+						btnText.style.display = 'inline-block';
+						loadingSpinner.style.display = 'none';
+						submitBtn.disabled = false;
+					});
+			});
+		}
+	</script>
+	<script src="script.js"></script>
+
+	<!-- Add this for debugging -->
+	<script>
+		window.onerror = function(msg, url, lineNo, columnNo, error) {
+			console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo + '\nColumn: ' + columnNo + '\nError object: ' + JSON.stringify(error));
+			return false;
+		};
+	</script>
 </body>
 </html>
